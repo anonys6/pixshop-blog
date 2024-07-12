@@ -18,7 +18,7 @@ export default function Navbar() {
                         Write
                     </Link> */}
 
-                    <Link href="/register" className="text-zinc-600 hover:text-zinc-800 text-sm">
+                    <Link href="/signup" className="text-zinc-600 hover:text-zinc-800 text-sm">
                         Register
                     </Link>
                     <Link href="/login" className="text-zinc-600 hover:text-zinc-800 text-sm">
