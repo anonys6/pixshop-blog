@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import "./globals.css";
+import MicrosoftClarity from "@/metrics/MicrosoftClarity";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,8 @@ export default function RootLayout({
           </div>
           <div className="flex-grow ">{children}</div>
         </div>
+
+        <MicrosoftClarity />
       </body>
     </html>
   );
