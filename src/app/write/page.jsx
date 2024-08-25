@@ -13,7 +13,10 @@ import {
     getDownloadURL,
 } from "firebase/storage";
 import { app } from "@/utils/firebase";
-import ReactQuill from "react-quill";
+import dynamic from "next/dynamic";
+
+// Dynamically import ReactQuill to ensure it only runs on the client side
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const WritePage = () => {
     const { status } = useSession();
@@ -27,7 +30,7 @@ const WritePage = () => {
     const [catSlug, setCatSlug] = useState("");
 
     useEffect(() => {
-        if (typeof document !== 'undefined') {
+        if (file) {
             const storage = getStorage(app);
             const upload = () => {
                 const name = new Date().getTime() + file.name;
@@ -59,7 +62,7 @@ const WritePage = () => {
                 );
             };
 
-            file && upload();
+            upload();
         }
     }, [file]);
 
@@ -76,8 +79,8 @@ const WritePage = () => {
             .toLowerCase()
             .trim()
             .replace(/[^\w\s-]/g, "")
-            .replace(/[\s_-]+/g, "-")
-            .replace(/^-+|-+$/g, "");
+            .replace(/[\s_-]+/g, "-");
+
 
     const handleSubmit = async () => {
         const res = await fetch("/api/posts", {
