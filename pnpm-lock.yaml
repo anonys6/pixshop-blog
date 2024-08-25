@@ -9,10 +9,10 @@ importers:
   .:
     dependencies:
       '@auth/prisma-adapter':
-        specifier: ^1.0.1
+        specifier: ^1.6.0
         version: 1.6.0(@prisma/client@5.18.0(prisma@5.18.0))
       '@prisma/client':
-        specifier: ^5.2.0
+        specifier: ^5.18.0
         version: 5.18.0(prisma@5.18.0)
       eslint:
         specifier: 8.48.0
@@ -21,16 +21,16 @@ importers:
         specifier: 13.4.19
         version: 13.4.19(eslint@8.48.0)(typescript@5.5.4)
       firebase:
-        specifier: ^10.3.0
+        specifier: ^10.13.0
         version: 10.13.0
       next:
         specifier: 13.4.19
         version: 13.4.19(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       next-auth:
-        specifier: ^4.23.1
+        specifier: ^4.24.7
         version: 4.24.7(next@13.4.19(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       prisma:
-        specifier: ^5.2.0
+        specifier: ^5.18.0
         version: 5.18.0
       react:
         specifier: 18.2.0
@@ -42,7 +42,7 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       swr:
-        specifier: ^2.2.2
+        specifier: ^2.2.5
         version: 2.2.5(react@18.2.0)
 
 packages:
@@ -583,8 +583,8 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  caniuse-lite@1.0.30001651:
-    resolution: {integrity: sha512-9Cf+Xv1jJNe1xPZLGuUXLNkE1BoDkqRqYyFJ9TDYSqhduqA4hu4oR9HluGoWYQC/aj8WHjsGVV+bwkh0+tegRg==}
+  caniuse-lite@1.0.30001653:
+    resolution: {integrity: sha512-XGWQVB8wFQ2+9NZwZ10GxTYC5hk0Fa+q8cSkr0tgvMhYhMHP/QC+WTgrePMDBWiWc/pV+1ik82Al20XOK25Gcw==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -2412,7 +2412,7 @@ snapshots:
 
   callsites@3.1.0: {}
 
-  caniuse-lite@1.0.30001651: {}
+  caniuse-lite@1.0.30001653: {}
 
   chalk@4.1.2:
     dependencies:
@@ -3278,7 +3278,7 @@ snapshots:
       '@next/env': 13.4.19
       '@swc/helpers': 0.5.1
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001651
+      caniuse-lite: 1.0.30001653
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
